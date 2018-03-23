@@ -6,10 +6,10 @@ RUN yum install -y epel-release && \
         yum install -y git curl && \
 	curl --silent --location https://rpm.nodesource.com/setup_8.x | bash - && \
 	yum -y install nodejs && \
-	echo -e "\
+echo -e "\
 [google-chrome] \n\
 name=google-chrome \n\
-baseurl=https://dl.google.com/linux/chrome/rpm/stable/x86_64 \n\
+baseurl=https://dl.google.com/linux/chrome/rpm/stable/\$basearch \n\
 enabled=1 \n\
 gpgcheck=1 \n\
 gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub \n\
