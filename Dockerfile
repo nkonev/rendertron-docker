@@ -20,6 +20,6 @@ gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub \n\
 RUN cd /opt && \
 	git clone https://github.com/GoogleChrome/rendertron.git && \
 	cd rendertron && \
-	npm install
+	npm install && npm run build
 EXPOSE 3000
 ENTRYPOINT ["npm", "run", "start"]
