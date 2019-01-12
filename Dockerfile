@@ -4,7 +4,7 @@ RUN mkdir -p $OPT_DIR
 WORKDIR $OPT_DIR
 RUN yum install -y epel-release && \
         yum install -y git curl && \
-	curl --silent --location https://rpm.nodesource.com/setup_8.x | bash - && \
+	curl --silent --location https://rpm.nodesource.com/setup_10.x | bash - && \
 	yum -y install nodejs && \
 echo -e "\
 [google-chrome] \n\
